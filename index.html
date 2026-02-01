@@ -7,8 +7,9 @@
   <style>
    <script>
   setTimeout(() => {
-    document.getElementById("question").textContent =
-      "Will you be my Valentine? 💖";
+    const q = document.getElementById("question");
+    q.textContent = "Will you be my Valentine? 💖";
+    q.style.opacity = "1";
   }, 4500);
 </script>
     body {
