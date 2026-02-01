@@ -7,26 +7,28 @@
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      background: radial-gradient(circle at top, #1b1b2f, #000);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      font-family: 'Georgia', serif;
+  height: 100vh;
+  background: radial-gradient(circle at top, #1b1b2f, #000);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  font-family: Georgia, serif;
+  padding-top: 80px;
     }
 
     .container {
       text-align: center;
-      animation: fadeIn 3s ease forwards;
+  min-height: 360px;
     }
 
     img {
      width: 220px;
-  opacity: 0;
-  transform: scale(0.2);
+  display: block;
+  margin: 0 auto;
+  opacity: 1;
+  transform: scale(1);
   animation: bloom 4s ease forwards, glow 3s ease-in-out infinite;
-  animation-delay: 0s, 4s;
     }
 
     h1 {
