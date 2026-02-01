@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You 🌸</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(circle at top, #1b1b2f, #000);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      font-family: 'Georgia', serif;
+    }
+
+    .container {
+      text-align: center;
+      animation: fadeIn 3s ease forwards;
+    }
+
+    img {
+      width: 220px;
+      opacity: 0;
+      transform: scale(0.2);
+      animation: bloom 4s ease forwards;
+      filter: drop-shadow(0 0 0px pink);
+    }
+
+    h1 {
+      color: #ffd6e8;
+      margin-top: 25px;
+      opacity: 0;
+      animation: textFade 2s ease forwards;
+      animation-delay: 4.5s;
+      font-weight: normal;
+    }
+
+    @keyframes bloom {
+      0% {
+        opacity: 0;
+        transform: scale(0.2);
+        filter: drop-shadow(0 0 0px pink);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.1);
+        filter: drop-shadow(0 0 25px pink);
+      }
+      100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 15px pink);
+      }
+    }
+
+    @keyframes textFade {
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="YOUR_FLOWER_IMAGE_URL_HERE" alt="Flower">
+    <h1>Just like this flower…<br>I bloom when I think of you 🌸</h1>
+  </div>
+</body>
+</html>
