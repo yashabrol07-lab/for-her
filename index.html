@@ -22,11 +22,11 @@
     }
 
     img {
-      width: 220px;
-      opacity: 0;
-      transform: scale(0.2);
-      animation: bloom 4s ease forwards;
-      filter: drop-shadow(0 0 0px pink);
+     width: 220px;
+  opacity: 0;
+  transform: scale(0.2);
+  animation: bloom 4s ease forwards, glow 3s ease-in-out infinite;
+  animation-delay: 0s, 4s;
     }
 
     h1 {
@@ -65,6 +65,17 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
+    @keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 10px pink);
+  }
+  50% {
+    filter: drop-shadow(0 0 25px pink);
+  }
+  100% {
+    filter: drop-shadow(0 0 10px pink);
+  }
+}
   </style>
 </head>
 <body>
